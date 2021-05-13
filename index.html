@@ -2,44 +2,53 @@
 <html>
 <style>
 
+body {
+    font-size: 14px;
+    font-family: arial,sans-serif;
+}
+
+#first {
+    margin-left: 15px;
+}
+
 ul {
     list-style-type: none;
     margin: 0px;
-    padding: 0px;
+    padding: 6px;
+    height: 60px;
     overflow: hidden;
-    background-color: red;
 }
 
 li {
+    float: left;
     padding: 5px;
+    margin: 0 5px;
 }
 
 li a {
     display: block;
     color: black;
     text-align: center;
-    padding: 5px;
+
     text-decoration: none;
-    border: 3px solid #000000;
+}
+li a:hover {
+    text-decoration: underline;
 }
 
-.leftNav {
-    float: left;
-}
-
-.leftNav {
+.rightNav {
     float: right;
 }
 
-body {
-    width: 584px;
-    margin: auto;
-    border: 3px solid #000000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: space-evenly;
-}
+    main {
+        width: 584px;
+        margin: 100px auto;
+        border: 3px solid #000000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-evenly;
+    }
 
     .logo {
         display: block;
@@ -63,22 +72,24 @@ body {
     }
 
 </style>
-
+<body>
 <ul>
-    <li class = "leftNav"><a href = "https://about.google/a/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"> About </a></li>
-    <li class = "leftNav"><a href = "https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US"> Store </a></li>
-    <li class = "rightNav"><a href = "https://www.google.com/gmail/about/"> Gmail </a></li>
-    <li class = "rightNav"><a href = "https://www.google.com/imghp?hl=en&ogbl"> Images </a></li>
-    <li class = "rightNav"><button> PlaceholderText </button></li>
+    <li id = "first"><a href = "https://about.google/a/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"> About </a></li>
+    <li><a href = "https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US"> Store </a></li>
     <li class = "rightNav"><button color = "blue"> Sign in </button> </li>
+    <li class = "rightNav"><button> ... </button></li>
+    <li class = "rightNav"><a href = "https://www.google.com/imghp?hl=en&ogbl"> Images </a></li>
+    <li class = "rightNav"><a href = "https://www.google.com/gmail/about/"> Gmail </a></li>
 </ul>
 
-<body>
+<main>
     <img class = "logo" src = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt = "the word google written with different colored letters">
     <input class = "searchBar" type = "text" name = "searchBar" placeholder="">
     <div class = "searchButtons">
         <button> Google Search </button>
         <button> I'm Feeling Lucky </button>
     </div>
+</main>
+
 </body>
 </html>
