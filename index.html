@@ -2,21 +2,83 @@
 <html>
 <style>
 
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: red;
+}
+
+li {
+    padding: 5px;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    border: 3px solid #000000;
+}
+
+.leftNav {
+    float: left;
+}
+
+.leftNav {
+    float: right;
+}
+
+body {
+    width: 584px;
+    margin: auto;
+    border: 3px solid #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+    .logo {
+        display: block;
+        margin: auto;
+        width: 272px;
+        height: 92px;
+    }s
+
+    .searchBar {
+        position: relative;
+        
+    }
+
+    .searchButtons {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: space-evenly;
+        justify-content: center;
+
+    }
+
 </style>
 
-<head>
-    <a href = "https://about.google/a/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"> About </a>
-    <a href = "https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US"> Store </a>
-    <a href = "https://www.google.com/gmail/about/"> Gmail </a>
-    <a href = "https://www.google.com/imghp?hl=en&ogbl"> Images </a>
-    <button> Google Search </button>
-    <button color = "blue"> Sign in </button> 
-</head>
+<ul>
+    <li class = "leftNav"><a href = "https://about.google/a/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"> About </a></li>
+    <li class = "leftNav"><a href = "https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US"> Store </a></li>
+    <li class = "rightNav"><a href = "https://www.google.com/gmail/about/"> Gmail </a></li>
+    <li class = "rightNav"><a href = "https://www.google.com/imghp?hl=en&ogbl"> Images </a></li>
+    <li class = "rightNav"><button> PlaceholderText </button></li>
+    <li class = "rightNav"><button color = "blue"> Sign in </button> </li>
+</ul>
 
 <body>
     <img class = "logo" src = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt = "the word google written with different colored letters">
     <input class = "searchBar" type = "text" name = "searchBar" placeholder="">
-    <button class = "searchButton"> Google Search </button>
-    <button class = "luckyButton"> I'm Feeling Lucky </button>
+    <div class = "searchButtons">
+        <button> Google Search </button>
+        <button> I'm Feeling Lucky </button>
+    </div>
 </body>
 </html>
