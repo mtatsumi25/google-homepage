@@ -29,14 +29,20 @@
         vertical-align: middle;
         text-decoration: none;
     }
+
     li a:hover {
         text-decoration: underline;
     }
 
-    .textLink {
-        padding: 16px 0;
+    .lowerTextLink {
+        padding: 30px 0;
+        border: 1px solid black;
+
     }
 
+    .upperTextLink {
+        padding: 16px 0;
+    }
 
 
     .rightNav {
@@ -44,6 +50,16 @@
     }
 
     .bottomNav {
+        display: flex;
+        flex-direction: row;
+        align-items: space-evenly;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0 20px;
+        width: 97%;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
         border: 1px solid black;
     }
 
@@ -170,12 +186,12 @@
 
 
 <ul class = topNav>
-    <li class = "textLink" id = "first">
+    <li class = "upperTextLink" id = "first">
         <a href = "https://about.google/a/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">
              About 
         </a>
     </li>
-    <li class = "textLink">
+    <li class = "upperTextLink">
         <a href = "https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">
              Store 
         </a>
@@ -192,12 +208,12 @@
             </span>
         </a>
     </li>
-    <li class = "rightNav textLink">
+    <li class = "rightNav upperTextLink">
         <a href = "https://www.google.com/imghp?hl=en&ogbl">
              Images 
         </a>
     </li>
-    <li class = "rightNav textLink">
+    <li class = "rightNav upperTextLink">
         <a href = "https://www.google.com/gmail/about/">
              Gmail 
         </a>
@@ -219,45 +235,46 @@
         <button class = "buttons"> I'm Feeling Lucky </button>
     </div>
 
-    <ul class = bottomNav>
-        <li class = "textLink bottomNav">
-            <a href = "https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">
-                 Carbon neutral since 2007 
-            </a>
-        </li>
-        <li class = "textLink bottomNav">
-            <a href = "https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1#!/">
-                 Advertising 
-            </a>
-        </li>
-        <li class = "textLink bottomNav">
-            <a href = "https://smallbusiness.withgoogle.com/?subid=us-en-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=us-en_US-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u#!/">
-                 Business 
-            </a>
-        </li>
-        <li class = "textLink bottomNav">
-            <a href = "https://www.google.com/search/howsearchworks/?fg=1">
-                 How Search Works 
-            </a>
-        </li>
-        <li class = "textLink bottomNav rightNav">
-            <a href = "https://policies.google.com/privacy?hl=en&fg=1">
-                 Privacy 
-            </a>
-        </li>
-        <li class = "textLink bottomNav rightNav">
-            <a href = "https://policies.google.com/terms?hl=en&fg=1">
-                 Terms 
-            </a>
-        </li>
-        <li class = "textLink bottomNav rightNav">
-            <a href = "">
-                 Settings 
-            </a>
-        </li>
-    </ul>
-
 </main>
+
+<ul class = bottomNav>
+    <li class = "lowerTextLink midNav">
+        <a href = "https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">
+             Carbon neutral since 2007 
+        </a>
+    </li>
+    <li class = "lowerTextLink">
+        <a href = "https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1#!/">
+             Advertising 
+        </a>
+    </li>
+    <li class = "lowerTextLink">
+        <a href = "https://smallbusiness.withgoogle.com/?subid=us-en-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=us-en_US-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u#!/">
+             Business 
+        </a>
+    </li>
+    <li class = "lowerTextLink ">
+        <a href = "https://www.google.com/search/howsearchworks/?fg=1">
+             How Search Works 
+        </a>
+    </li>
+
+    <li class = "lowerTextLink rightNav">
+        <a href = "https://policies.google.com/privacy?hl=en&fg=1">
+             Privacy 
+        </a>
+    </li>
+    <li class = "lowerTextLink rightNav">
+        <a href = "https://policies.google.com/terms?hl=en&fg=1">
+             Terms 
+        </a>
+    </li>
+    <li class = "lowerTextLink rightNav">
+        <a href = "">
+             Settings 
+        </a>
+    </li>
+</ul>
 
 </body>
 </html>
